@@ -1,0 +1,60 @@
+/*Custom styles for TeachT3ch Web*/
+.fa-angle-right{
+    margin:5px;
+    -moz-transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    
+}
+.fa-file-alt{
+    margin:5px;
+}
+.fa-youtube{
+    color:red;
+    margin: 5px;
+}
+.tema-title{
+    cursor: pointer;
+}
+
+.tema-title-downArrow-toRight{
+    transform:rotate(90deg);
+}
+
+.tema-divDisplayContenidos-description{
+    font-style: italic;
+}
+
+.tema-divDisplayContenidos-lista{
+    padding-left:2em;
+}
+
+.tema-divDisplayContenidos-lista-item-enlaceIcono{
+    margin: 5px; 
+    border: none;
+}
+
+.tema-divDisplayContenidos-lista-recursosAdicionales > li{
+    border-style:none !important;
+    list-style-type: none;
+}
+
+.tema-divDisplayContenidos-lista-recursosAdicionales > li:before{
+    content: '👉';
+    margin: 0 5px 0 0;
+}
+
+.tema-divDisplayContenidos-lista-recursosAdicionales-sublista > li{
+    border-style:none !important;
+    list-style-type: none;
+}
+
+.tema-divDisplayContenidos-lista-recursosAdicionales-sublista > li:before{
+    content: '\02C3';
+    margin: 0 5px 0 5px;
+}
+
+.displayContenidos{
+    display: none;
+}
+
