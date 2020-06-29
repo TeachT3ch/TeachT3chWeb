@@ -1,5 +1,9 @@
 /*Custom styles for TeachT3ch Web*/
 
+.team-img-circle{
+    border-radius: 50% !important;
+}
+
 .sections-a-icons{
     margin-bottom: 2em !important;
     cursor: pointer !important;
