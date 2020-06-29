@@ -1,4 +1,10 @@
 /*Custom styles for TeachT3ch Web*/
+
+.sections-a-icons{
+    margin-bottom: 2em !important;
+    cursor: pointer !important;
+}
+
 .fa-angle-right{
     margin:5px;
     -moz-transition: all 0.4s linear;
