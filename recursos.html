@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/custom.css" />
+	<script type="text/javascript" language="javascript" src="recursos.js"></script>
+
 
 </head>
 
@@ -30,50 +32,16 @@
 		<section id="main" class="container">
 			<header>
 				<h2>Recursos - Teach<b>[Tech]</b></h2>
-				<p>Slides/Recursos extra.</p>
+				<p>Recursos extra</p>
 			</header>
 			<div class="box">
+				<span class="image featured"><img src="images/8.jpg" alt="" /></span>
 				<div class="row">
 					<div class="row-6 row-12-mobilep">
 						<p>
-							En esta sección puedes encontrar las slides de cada una de las clases (estarán disponible la semana de clase) así como algunos recursos extra.
+							Llena tu caja de herramientas para no pararte y seguir aprendiendo. Aquí te recomendaremos recursos de interés como cursos gratuitos, blogs y canales de Youtube con buen contenido, guías claras o páginas donde poder obtener formación y certificaciones gratuitas.
 						</p>
-						<table class="alt">
-							<thead>
-								<tr>
-									<th>Clase/Tema</th>
-									<th>Descripción</th>
-									<th>Link</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Presentación Teach[Tech]</td>
-									<td>Slides de la introducción al curso.</td>
-									<td><a href="">Enlace introducción</a></td>
-								</tr>
-								<tr>
-									<td>Tema 1 - Introducción</td>
-									<td>Introducción a la programación.</td>
-									<td><a href="">Enlace introducción</a></td>
-								</tr>
-								<tr>
-									<td>Tema 2 - Variables y tipos de datos</td>
-									<td>Empezamos con Javascript.</td>
-									<td><a href="">Enlace introducción</a></td>
-								</tr>
-							</tbody>
-
-						</table>
-
-					</div>
-
-				</div>
-				<div class="iframe-container"><iframe
-						src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBJc9sTrDb9hL1cnTnDnOkIeXH-fctUqbSM0n9ZdcPjvT45hKUN52Yny6A0U3ZeWAibMiynj1guUAj/pubhtml?widget=true&amp;headers=false"
-						allowfullscreen></iframe>
-				</div>
-
+						<div class="resources-section">
 			</div>
 		</section>
 
@@ -103,6 +71,30 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+
+	<script>
+		
+		recursos.forEach((recurso, index)=> {
+			$(".resources-section").append(`<h2>${recurso.category}</h2>`);
+			$(".resources-section").append(`<table class="alt resources-section-${index}-table"></table>`);
+			$(`.resources-section-${index}-table`).append(`<thead><tr>
+									<th>Recurso</th>
+									<th>Descripción</th>
+									</tr></thead><tbody  class="resources-table resources-section-${index}-table-body"</tbody`);
+			let items = recurso.items;
+			items.forEach((item) =>{
+				$(`.resources-section-${index}-table-body`).append(`<tr>
+									<th><a href="${item.Link}">${item.Name}</a></th>
+									<th>${item.Description}</th>
+									</tr>`);
+			})
+			;
+		});
+		
+	
+	</script>
+
 </body>
 
 </html>
