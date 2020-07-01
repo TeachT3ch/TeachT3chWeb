@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Teach[Tech]</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<script type="text/javascript" language="javascript" src="assets/js/recursos.js"></script>
+
+
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Teach<b>[Tech]</b></a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="equipo.html">Equipo</a></li>
+					<li><a href="temario.html">Temario</a></li>
+					<li><a href="recursos.html">Recursos</a></li>
+					<li><a href="codigo-conducta.html">Código de Conducta</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>Recursos - Teach<b>[Tech]</b></h2>
+				<p>Recursos extra</p>
+			</header>
+			<div class="box">
+				<span class="image featured"><img src="images/8.jpg" alt="" /></span>
+				<div class="row">
+					<div class="row-6 row-12-mobilep">
+						<p>
+							Llena tu caja de herramientas para no pararte y seguir aprendiendo. Aquí te recomendaremos recursos de interés como cursos gratuitos, blogs y canales de Youtube con buen contenido, guías claras o páginas donde poder obtener formación y certificaciones gratuitas.
+						</p>
+						<div class="resources-section">
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<span class="image img"><img src="images/logo.png" style="width: 150px" /></span>
+			<ul class="icons">
+				<li><a href="https://www.twitter.com/teacht3ch" class="icon brands fa-twitter"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="mailto:teacht3ch@gmail.com" class="icon fa-envelope"><span class="label">Twitter</span></a>
+				</li>
+				<li><a href="https://github.com/TeachT3ch" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Teach[Tech] 2020. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+	<script>
+		
+		recursos.forEach((recurso, index)=> {
+			$(".resources-section").append(`<h2>${recurso.category}</h2>`);
+			$(".resources-section").append(`<table class="alt resources-section-${index}-table"></table>`);
+			$(`.resources-section-${index}-table`).append(`<thead><tr>
+									<th>Recurso</th>
+									<th>Descripción</th>
+									</tr></thead><tbody  class="resources-table resources-section-${index}-table-body"</tbody`);
+			let items = recurso.items;
+			items.forEach((item) =>{
+				$(`.resources-section-${index}-table-body`).append(`<tr>
+									<th><a href="${item.Link}">${item.Name}</a></th>
+									<th>${item.Description}</th>
+									</tr>`);
+			})
+			;
+		});
+		
+	
+	</script>
+
+</body>
+
+</html>
