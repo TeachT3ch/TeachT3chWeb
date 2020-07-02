@@ -33,7 +33,7 @@ var recursos = [
                 }
         ]
     }, 
-    { category: "Plataformas de cursos gratuitos en inglés 👨‍🏫🇬🇧", 
+    { category: "Cursos gratuitos en inglés 👨‍🏫🇬🇧", 
     items:
         [
             {
@@ -45,6 +45,11 @@ var recursos = [
                 Name: "FreeCodeCamp.com",
                 Description: "Cursos con ejercicios interactivos y proyectos prácticos que te permitirán obtener una certificación final ¡gratis!",
                 Link: "https://www.freecodecamp.com"
+            },
+            {
+                Name: "Become a Software Developer",
+                Description: "Curso de Linkedin con diversos apartados para abordar todos los aspectos relevantes del desarrollo de software",
+                Link: "https://www.linkedin.com/learning/paths/become-a-software-developer"
             }
         ]
     },
