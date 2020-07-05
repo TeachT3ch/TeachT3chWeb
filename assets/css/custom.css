@@ -31,14 +31,6 @@
   transform: rotate(90deg);
 }
 
-.tema-divDisplayContenidos-description {
-  font-style: italic;
-}
-
-.tema-divDisplayContenidos-lista {
-  padding-left: 2em;
-}
-
 .tema-divDisplayContenidos-lista-item-enlaceIcono {
   margin: 5px;
   border: none;
