@@ -27,6 +27,16 @@
   cursor: pointer;
 }
 
+.remark-week {
+  background-color: antiquewhite;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.remark-week:before  {
+    content: "🔔";
+}
+
 .tema-title-downArrow-toRight {
   transform: rotate(90deg);
 }
@@ -73,12 +83,12 @@
   padding-top: 56.25%;
   position: relative;
 }
- 
+
 .iframe-container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
