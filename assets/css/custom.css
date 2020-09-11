@@ -33,8 +33,8 @@
   font-weight: bold;
 }
 
-.remark-week:before  {
-    content: "🔔";
+.remark-week:before {
+  content: "🔔";
 }
 
 .tema-title-downArrow-toRight {
@@ -93,6 +93,11 @@
   width: 100%;
 }
 
-.underline{
+.underline {
   text-decoration: underline wavy #e89980;
+}
+.mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
 }
