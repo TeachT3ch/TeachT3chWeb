@@ -105,11 +105,11 @@
 .mc_box {
   margin: auto;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.mc_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.mc_button{
   margin-top: 10px;
 }
