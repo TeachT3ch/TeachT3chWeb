@@ -101,3 +101,12 @@
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
 }
+
+.mc_box {
+  margin: auto;
+  width: 50%;
+}
+
+.mc_button {
+  margin-top: 10px;
+}
