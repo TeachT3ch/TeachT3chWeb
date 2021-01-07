@@ -2746,9 +2746,9 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #666;
+		background-color: #e89980;
 		border-radius: 6px;
-		border: 0;
+		border: 0.5px solid #666;
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -3678,7 +3678,7 @@
 			}
 
 			h3 {
-				font-size: 1.5em;
+				font-size: 1.3em;
 			}
 
 			h4 {

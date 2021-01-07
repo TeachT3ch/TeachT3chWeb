@@ -95,6 +95,18 @@
 
 .underline {
   text-decoration: underline wavy #e89980;
+  padding-bottom: 10px;
+}
+
+.underline2 {
+  text-decoration: underline dotted #e89980;
+}
+
+cite {
+  font-style: oblique;
+  font-family: revert;
+  font-size: small;
+  padding: 10px;
 }
 .mc_embed_signup {
   background: #fff;
@@ -108,8 +120,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
-.mc_button{
+.mc_button {
   margin-top: 10px;
 }
+
+nav {
+  font-family: monospace;
+}
+
