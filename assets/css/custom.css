@@ -1,5 +1,9 @@
 /*Custom styles for TeachT3ch Web*/
 
+.footer-text {
+  font-size: 12px;
+}
+
 .team-img-circle {
   border-radius: 50% !important;
   width: 100px;
@@ -120,7 +124,6 @@ cite {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .mc_button {
@@ -130,4 +133,3 @@ cite {
 nav {
   font-family: monospace;
 }
-
